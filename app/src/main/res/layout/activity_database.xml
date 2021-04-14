@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Database">
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="118dp"
+        android:minHeight="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/btn_del_first_row"
+        android:layout_width="337dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:text="Delete row 1"
+        app:layout_constraintBottom_toBottomOf="@+id/tableRow5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow5" />
+
+    <Button
+        android:id="@+id/btn_go_2act1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="goto ACT1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_go_2act3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="244dp"
+        android:text="goto ACT3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:minHeight="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/out_first_row"
+            android:layout_width="189dp"
+            android:layout_height="52dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="0dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginBottom="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableRow4">
+
+        <Button
+            android:id="@+id/btn_read_first_row"
+            android:layout_width="308dp"
+            android:layout_height="87dp"
+            android:layout_weight="1"
+            android:text="Read Row 1" />
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>

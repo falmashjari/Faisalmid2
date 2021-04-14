@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Databaseh">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DBAccess"
+        tools:layout_editor_absoluteX="-167dp"
+        tools:layout_editor_absoluteY="-164dp">
+
+        <TextView
+            android:id="@+id/out_first_row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TableRow
+            android:layout_width="411dp"
+            android:layout_height="204dp"
+            android:minHeight="100dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <TableRow
+            android:layout_width="412dp"
+            android:layout_height="294dp"
+            android:minHeight="100dp" />
+
+        <Button
+            android:id="@+id/btn_read_first_row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Read Row 1" />
+
+        <Button
+            android:id="@+id/btn_del_first_row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Delete row 1" />
+
+        <Button
+            android:id="@+id/btn_go_2act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="goto ACT1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_go_2act2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="goto ACT3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
